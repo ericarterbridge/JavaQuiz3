@@ -6,6 +6,9 @@ import java.util.List;
  * @author leon on 10/12/2018.
  */
 public class Student {
+    String labName;
+    LabStatus labStatus;
+    Lab lab;
 
     public Student() {
         this(null);
