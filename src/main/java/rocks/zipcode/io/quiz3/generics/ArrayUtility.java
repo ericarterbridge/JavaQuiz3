@@ -16,6 +16,7 @@ public class ArrayUtility<SomeType> {
         SomeType element1;
         int count = 0;
         for (int i = 0; i < array.length; i++){
+            count = 0;
             element1 = array[i];
             for (int j = 0; j < array.length; j++){
                 if (element1 == array[j]){
@@ -30,6 +31,20 @@ public class ArrayUtility<SomeType> {
     }
 
     public SomeType findEvenOccurringValue() {
+        SomeType element1;
+        int count = 0;
+        for (int i = 0; i < array.length; i++){
+            count = 0;
+            element1 = array[i];
+            for (int j = 0; j < array.length; j++){
+                if (element1 == array[j]){
+                    count++;
+                }
+            }
+            if (count%2 == 0){
+                return element1;
+            }
+        }
         return null;
     }
 
